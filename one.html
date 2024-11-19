@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>Amanda Berkley Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Amanda Berkley<br />
+							Portfolio </h1>
+						<p>Data Analyst skilled in SQL, Tableau, and Excel <br />
+							<a href="aberkley95@gmail.com">aberkley95@gmail</a> <br /> <a href="insertlinkedinprofile">LinkedIn</a><br />
+						</a></p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Amanda Berkley</a>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								
+							
+									<h2>SQL Data Cleaning<br />
+									Project Explanation</h2>
+        
+								<h3><a href="https://github.com/aberkley95/SQL-Project/blob/main/SQL%20Data%20Cleaning%20Cities.sql">SQL Script</a></h3>
+                                <p> After collecting the raw data I used MySQL to clean and standardize the data. I first created a second cities table to manipulate to ensure I still had a backup of the original data. 
+                                    <br />
+                                    Throughout this process I not only found leading zeros and some random periods, but there were a couple duplicates and a null value as well. 
+                                    <br />
+                                    First, I used the TRIM function for removing any leading and trailing zeros. I then used SELECT DISTINCT for various columns, including the “state” column, where I found multiple “California” inputs. This is where I noticed an unintentional period distinguishing it as a separate input. I used UPDATE and SET to fix this issue. 
+                                    <br />
+                                    I also noticed some of the names of the columns were weird. For instance “ï»¿State” rather than “state”. I used ALTER TABLE and RENAME to fix any column names that seemed weird or bulky. Once all of the columns appeared standardized, I moved on to removing duplicates and null values.
+                                    <br />
+                                    I created a “city ID” column and used window functions to find duplicate data. From there I used INNER JOIN to delete these duplicates while leaving an original, which was made possible using the city ID column. 
+                                    <br />
+                                    You can access my script to view my process from the home page, or access it <a href="https://github.com/aberkley95/SQL-Project/blob/main/SQL%20Data%20Cleaning%20Cities.sql">here.</a>
+                                    <br />
+  
+								</ul>
+							</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+				
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Layton, Utah<br />
+								84040</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(505) 388-4317</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">aberkley95@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

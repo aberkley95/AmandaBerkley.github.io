@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title>Amanda Berkley Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Amanda Berkley<br />
+							Portfolio </h1>
+						<p>Data Analyst skilled in SQL, Tableau, and Excel <br />
+							<a href="aberkley95@gmail.com">aberkley95@gmail</a> <br /> <a href="insertlinkedinprofile">LinkedIn</a><br />
+						</a></p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Amanda Berkley</a>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								
+							
+									<h2>SQL Data Analysis<br />
+									Project Explanation</h2>
+                             
+		
+                                <h3><a href="https://github.com/aberkley95/SQL-Project/blob/main/SQL%20Data%20Analysis%20Cities.sql">SQL Script</a></h3>
+                                <p>
+                                    I used this question to inspire my queries, but I first had to standardize further data in order to analyze it with ease. Some of the calculated fields I made in Excel were numbered to order the buttons in a way that made sense to me. For example, I wanted the sizes of the cities ordered from smallest to biggest, rather than alphabetically, so I numbered them to show up this way. I knew these numbers would get in the way of my analysis so I altered my secondary table. To do this, I used the SET WHERE and LIKE functions to replace the numbered sizes with unnumbered sizes.
+                                    <br />
+                                    I then began to explore my data. I first found the cheapest city to live in based on the median income by using SELECT MIN(home_cost) and found the answer to be Springfield, Illinois. I used the same function to find the city with the lowest crime rate, which ended up being Pleasant Grove, Utah. 
+                                    <br />
+                                    Now I wanted to see which cities checked more than one box. In Excel I had labeled the various sizes of cities including rural, small, medium, large and metropolis. We have lived in very rural areas to metropolis sized cities, and have found that we prefer medium sized cities. I used SELECT and SELECT MIN() to find that the most affordable city that was medium sized is Lacey, Washington. 
+                                    <br />
+                                    This was surprising to me as I included multiple medium sized cities in Utah, California and Oregon. (In the midwest I had mainly added bigger cities) I expected Utah to be the cheapest generally, with Oregon still being cheaper than Washington, but based solely on cities that were medium sized, and the median housing costs, Lacey, WA is cheapest.
+                                    <br /> 
+                                    Next I used the SELECT MIN( ) function again to find that the city with the lowest crime rate and a comfortable humidity level is Bainbridge Island, Washington. I have visited there and while I would love to live there, it’s one of the most expensive cities I collected data for. 
+                                    <br />
+                                    I used SELECT MAX( ) to find that the city with the highest average income that is also liberal leaning is Redmond, Washington. This didn’t surprise me and while interesting, Redmond is also one of the most expensive cities I collected. 
+                                    <br />
+                                    I decided that I needed to see if there was any one city that checked all of my boxes that matter most to me. I wanted to know if such cities exist, which is the most affordable?
+                                    <br />
+                                    To find this I first decided which conditions were the most important to me. Next I filtered the cities by these conditions. Which are: the humidity is “comfortable”, the air quality average is less than 50, the political leaning is “liberal”, and the size is “medium”. This pulled up only two results, meaning only 2 of the 50 cities I collected data for checked all of these boxes. Those cities are Olympia, Washington, and Lacey, Washington.
+                                    <br />
+                                    I then pulled up the median housing cost and crime rate of just these two cities to compare and see which of these two options scores better in those areas. What I found was that Lacey, Washington had both a lower median home cost as well as a lower crime rate. 
+                                    <br />
+                                    Before I called it a day, I wanted to compare Lacey to some of the small sized cities. Even though our preference is medium, we have also enjoyed living in small cities as well. I also noticed that I had collected more small cities than medium in my dataset. To compare these cities, I again filtered by cities which met my previous conditions: comfortable humidity, good air quality, and liberal leaning. However, this time I changed the medium requirement to WHERE city = ‘small’. This brought up only two cities which met all of my conditions, both in Washington. Those cities are Bremerton and Puyallup. 
+                                    <br />
+                                    I pulled up the home costs and crime rates of all four cities: Bremerton, Lacey, Olympia, and Puyallup. What I found was that Lacey still had the lowest crime rate, but was only the second most affordable. Bremerton has a slightly cheaper median home cost than Lacey, being 457,600 to Lacey’s 467,900. But Bremerton also had a significantly higher crime rate. In fact, Bremerton had the highest of all four cities at 31.8, while Lacey’s crime rate is 17.6. 
+
+                                    <br />
+                                    The choice of crime rate vs low housing cost is a personal one to make, but I personally would take the second cheapest of these cities because the feeling of a safe city is more important to me. To me the difference between the two cities' home costs felt negligible when compared to the staggering difference in crime rates, which almost doubles from Lacey to Bremerton. (31.8 / 17.6 = 1.8)
+
+                                    <br />
+                                    You can access my SQL script to follow along with my analysis on the homepage or <a href="https://github.com/aberkley95/SQL-Project/blob/main/SQL%20Data%20Analysis%20Cities.sql">here.</a>
+                                </p>
+                              
+								</ul>
+							</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+				
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Layton, Utah<br />
+								84040</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(505) 388-4317</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">aberkley95@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
